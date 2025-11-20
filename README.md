@@ -70,13 +70,13 @@ All VMs were placed on the same broadcast domain using bridged networking + Zero
 ## 📝 Network Verification
 
 ### 1️⃣ **Ubuntu Desktop #1 — IP Address (`ip a`)**
-![Ubuntu Desktop IP](images/week1/ip-desktop1.png)
+![Ubuntu Desktop IP](https://github.com/UnSloppyJoe/CompTIA-N10-009-Lab-Portfolio/blob/main/images/Ubuntu%20Client%201%20ip%20a.png)
 
 ### 2️⃣ **Ubuntu Desktop #2 — IP Address (`ip a`)**
-![Ubuntu Desktop 2 IP](images/week1/ip-desktop2.png)
+![Ubuntu Desktop 2 IP](https://github.com/UnSloppyJoe/CompTIA-N10-009-Lab-Portfolio/blob/main/images/Ubuntu%20Hyper%20V%201%20ip%20a.png)
 
 ### 3️⃣ **Ubuntu Server — IP Address (`ip a`)**
-![Ubuntu Server IP](images/week1/ip-server.png)
+![Ubuntu Server IP](https://github.com/UnSloppyJoe/CompTIA-N10-009-Lab-Portfolio/blob/main/images/Ubuntu%20VM%20Server%20ip%20a.png)
 
 ---
 
