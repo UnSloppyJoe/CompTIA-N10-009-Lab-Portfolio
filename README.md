@@ -30,23 +30,100 @@ Each week focuses on a major networking domain and demonstrates applied knowledg
 
 ### **Week 1 – Networking Fundamentals**
 
-**Topics Covered:**  
-- OSI & TCP/IP models  
-- MAC vs IP addressing  
-- Subnetting basics  
+# 🗂️ Week 1 — Virtualization & Basic Networking Lab
+This week focused on building the foundation of my Network+ home lab using multiple hypervisors (Hyper-V and VMware Workstation Pro) and verifying VM-to-VM connectivity across the same network.  
 
-**Lab Tasks:**  
-- Create two VMs with static IPs  
-- Test connectivity using `ping` and `traceroute`  
-- Capture ICMP traffic in **Wireshark**  
+---
 
-**Deliverables:**  
-- Wireshark capture screenshot  
-- Topology diagram  
-- Summary paragraph  
+## 🔧 Lab Objectives
+- Build a multi-hypervisor virtual environment  
+- Install Ubuntu Desktop (VMware + Hyper-V)  
+- Install Ubuntu Server (VMware)  
+- Connect all VMs to the same network  
+- Verify communication using `ip a` and `ping`  
+- Document results with screenshots  
 
-**Notes / Reflection:**  
-_Example: Learned how each layer of OSI interacts during a ping request and confirmed IP-to-MAC address resolution._
+---
+
+## 🖥️ Virtual Machines Used
+| VM Name | Hypervisor | OS | Purpose |
+|--------|------------|----|---------|
+| `ubuntu-desktop-vmware` | VMware Workstation | Ubuntu Desktop 22.04 | Client workstation |
+| `ubuntu-desktop-hyperv` | Hyper-V | Ubuntu Desktop 22.04 | Second workstation |
+| `ubuntu-server` | VMware Workstation | Ubuntu Server 22.04 | Server for future labs |
+
+---
+
+## 🌐 Network Topology (Week 1)
+
+[ VMware Ubuntu Desktop ]
+→ Same subnet → Full connectivity
+[ Hyper-V Ubuntu Desktop ] /
+|
+[ Ubuntu Server (VMware) ] — Added to same network, reachable by both desktops
+
+
+All VMs were placed on the same broadcast domain using bridged networking + ZeroTier where needed.
+
+---
+
+## 📝 Network Verification
+
+### 1️⃣ **Ubuntu Desktop #1 — IP Address (`ip a`)**
+![Ubuntu Desktop IP](images/week1/ip-desktop1.png)
+
+### 2️⃣ **Ubuntu Desktop #2 — IP Address (`ip a`)**
+![Ubuntu Desktop 2 IP](images/week1/ip-desktop2.png)
+
+### 3️⃣ **Ubuntu Server — IP Address (`ip a`)**
+![Ubuntu Server IP](images/week1/ip-server.png)
+
+---
+
+## 🔄 Connectivity Tests
+
+### 🔹 VM → VM Ping Test (Desktop 1 → Desktop 2)
+![Ping Test 1](images/week1/ping-d1-to-d2.png)
+
+### 🔹 VM → Server Ping Test (Desktop 1 → Server)
+![Ping Test 2](images/week1/ping-d1-to-server.png)
+
+### 🔹 Server → Hyper-V Desktop Ping Test (Server → Desktop 2)
+![Ping Test 3](images/week1/ping-server-to-d2.png)
+
+---
+
+## 📚 What I Learned This Week
+- How virtualization works across multiple hypervisors  
+- Difference between bridged, NAT, and external switches  
+- How to check Linux network interfaces (`ip a`)  
+- How ARP/Neighbor discovery works (`ip neigh`)  
+- How to verify connectivity using ICMP (`ping`)  
+- How to document a lab environment professionally  
+
+---
+
+## 📸 Screenshots Folder Reference
+All Week 1 screenshots are stored in:
+
+/images/week1/
+
+
+File naming format:
+
+Ubuntu Client 1 ip a.png
+Ubuntu Client 1 ping to hyper v & server.png
+Ubuntu Hyper V 1 ip a.png
+Ubuntu Hyper V ping to Server.png
+Ubuntu VM Server ip a.png
+Ubuntu VM Server ping to UClient 1.png
+
+
+---
+
+## ✅ Week 1 Completed
+This completes the foundational environment for the coming weeks, where I will add routing, firewalls, services, VLANs, NAT, static routing, and more as part of my Network+ portfolio.
+
 
 ---
 
