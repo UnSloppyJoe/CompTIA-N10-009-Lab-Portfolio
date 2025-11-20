@@ -82,14 +82,14 @@ All VMs were placed on the same broadcast domain using bridged networking + Zero
 
 ## 🔄 Connectivity Tests
 
-### 🔹 VM → VM Ping Test (Desktop 1 → Desktop 2)
-![Ping Test 1](images/week1/ping-d1-to-d2.png)
+### 🔹 VM → VM Ping Test (Desktop 1 → Desktop 2 & Server)
+![Ping Test 1](https://github.com/UnSloppyJoe/CompTIA-N10-009-Lab-Portfolio/blob/main/images/Ubuntu%20Client%201%20ping%20to%20hyper%20v%20%26%20server.png)
 
-### 🔹 VM → Server Ping Test (Desktop 1 → Server)
-![Ping Test 2](images/week1/ping-d1-to-server.png)
+### 🔹 VM → Server Ping Test (Desktop 2 → Server)
+![Ping Test 2](https://github.com/UnSloppyJoe/CompTIA-N10-009-Lab-Portfolio/blob/main/images/Ubuntu%20Hyper%20V%20ping%20to%20Server.png)
 
-### 🔹 Server → Hyper-V Desktop Ping Test (Server → Desktop 2)
-![Ping Test 3](images/week1/ping-server-to-d2.png)
+### 🔹 Server → Hyper-V Desktop Ping Test (Server → Desktop 1)
+![Ping Test 3]([images/week1/ping-server-to-d2.png](https://github.com/UnSloppyJoe/CompTIA-N10-009-Lab-Portfolio/blob/main/images/Ubuntu%20VM%20Server%20ping%20to%20UClient%201.png))
 
 ---
 
