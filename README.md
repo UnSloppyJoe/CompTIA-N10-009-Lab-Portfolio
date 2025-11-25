@@ -16,8 +16,8 @@ Each week focuses on a major networking domain and demonstrates applied knowledg
 
 | Component | Tool / OS | Purpose |
 |------------|------------|----------|
-| Hypervisor | VirtualBox / VMware Workstation / Proxmox | Host VMs |
-| Router / Firewall | pfSense / VyOS / MikroTik CHR | Routing, firewall, VPN |
+| Hypervisor | VirtualBox / VMware Workstation Pro / Hyper-V | Virtualization |
+| Router / Firewall | Zerotier | Routing, firewall, VPN |
 | Server | Ubuntu Server / Windows Server | DHCP, DNS, File Services |
 | Clients | Ubuntu Desktop / Windows 10 | End-user devices |
 | Tools | Wireshark, Nmap, PuTTY, GNS3 / Cisco Packet Tracer | Packet capture, simulation, testing |
